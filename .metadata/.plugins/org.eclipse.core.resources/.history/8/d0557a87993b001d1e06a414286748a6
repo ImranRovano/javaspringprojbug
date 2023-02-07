@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<!-- https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html -->
+	<head th:replace="layout :: headTags"></head>
+
+	<body>
+		<!-- <nav th:replace="layout :: navBar"></nav>  -->
+		<div class="container">
+			<table>
+				<thead>
+					<tr>
+						<th>Member ID</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email</th>
+						<th>Created</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="memberTempVar : ${membersDashboard}">
+						<td th:text="${memberTempVar.memberFname}"/>
+						<td th:text="${memberTempVar.memberLname}"/>
+						<td th:text="${memberTempVar.memberEmail}"/>
+						<td th:text="${memberTempVar.memberCreated}"/>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

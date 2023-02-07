@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<link rel="stylesheet" th:ref="@{/bootstrap-5.2.1-dist/css/bootstrap.min.css}"/>
+	</head>
+	<body></body>
+
+</html>

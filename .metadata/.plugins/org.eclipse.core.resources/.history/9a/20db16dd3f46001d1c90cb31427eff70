@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link th:href="@{/bootstrap-5.2.1-dist/css/bootstrap.min.css}" rel="stylesheet"/>
+	</head>
+
+	<body>
+	
+	</body>
+
+</html>

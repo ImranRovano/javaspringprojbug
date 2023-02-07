@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+<html xmlns:th="https://www.thymeleaf.org">
+
+	<head>
+		<link th:href="" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<div ">					
+		  <div class="container__form--col-md-6 col-md-6">
+		    <label for="inputProjTitle" class="container__form--form-label form-label">Project Title</label>
+		    <input th:field="${projectFormHtml.projTitle}" type="text" class="container__form--form-control form-control" id="inputProjTitle">
+		  </div>
+		  <div class="container__form--col-md-6 col-md-6">
+		    <label for="inputProjTitle" class="container__form--form-label form-label">Project Description</label>
+		    <textarea th:field="${projectFormHtml.projDescription}" class="container__form--form-control form-control" id="inputProjDescription"></textarea>
+		  </div>
+		  <div class="container__col-12 col-12">
+		  	<button class="container__form--form-btn btn btn-primary" type="submit">Save Project</button>
+		  </div>
+		</div>
+	</body>
+
+</html>
